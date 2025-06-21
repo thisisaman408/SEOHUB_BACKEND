@@ -21,6 +21,7 @@ const userSchema = mongoose.Schema(
 			enum: ['user', 'admin'],
 			default: 'user',
 		},
+		companyLogoUrl: { type: String, default: '' },
 	},
 	{
 		timestamps: true,

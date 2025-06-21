@@ -95,6 +95,7 @@ const updateToolStatus = asyncHandler(async (req, res) => {
 		const redisClient = getRedisClient();
 		await redisClient.del('allTools');
 		await redisClient.del('featuredTools');
+		await redisClient.del(`tool:${req.params.id}`);
 		res.json(updatedTool);
 	} else {
 		res.status(404).throw(new Error('Tool not found'));
@@ -111,6 +112,7 @@ const deleteTool = asyncHandler(async (req, res) => {
 		const redisClient = getRedisClient();
 		await redisClient.del('allTools');
 		await redisClient.del('featuredTools');
+		await redisClient.del(`tool:${req.params.id}`);
 		res.json({ message: 'Tool removed' });
 	} else {
 		res.status(404).throw(new Error('Tool not found'));

@@ -23,7 +23,7 @@ const toolSchema = mongoose.Schema(
 			required: true,
 			ref: 'User',
 		},
-		// You can add more fields based on your frontend data structure
+		logoUrl: { type: String, default: '' },
 		visual: {
 			type: { type: String },
 			color: { type: String },
