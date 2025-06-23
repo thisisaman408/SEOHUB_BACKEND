@@ -148,7 +148,7 @@ const getFeaturedTools = asyncHandler(async (req, res) => {
 	}
 
 	const tools = await Tool.find({ status: 'approved', isFeatured: true }).limit(
-		5
+		10
 	);
 	await redisClient.set(cacheKey, JSON.stringify(tools), { EX: 3600 });
 	res.json(tools);
