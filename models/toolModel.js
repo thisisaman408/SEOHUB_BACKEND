@@ -34,6 +34,23 @@ const toolSchema = mongoose.Schema(
 				},
 			],
 		},
+		source: {
+			type: String,
+			enum: ['listed', 'scraped'],
+			default: 'listed',
+		},
+		totalRatingSum: {
+			type: Number,
+			default: 0,
+		},
+		numberOfRatings: {
+			type: Number,
+			default: 0,
+		},
+		averageRating: {
+			type: Number,
+			default: 0,
+		},
 	},
 	{
 		timestamps: true,

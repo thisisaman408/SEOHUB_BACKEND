@@ -22,18 +22,20 @@ const userSchema = mongoose.Schema(
 			default: 'user',
 		},
 		companyLogoUrl: { type: String, default: '' },
+		source: {
+			type: String,
+			enum: ['listed', 'scraped'],
+			default: 'listed',
+		},
 	},
 	{
 		timestamps: true,
 	}
 );
-
-// Method to compare entered password with hashed password
 userSchema.methods.matchPassword = async function (enteredPassword) {
 	return await bcrypt.compare(enteredPassword, this.password);
 };
 
-// Middleware to hash password before saving
 userSchema.pre('save', async function (next) {
 	if (!this.isModified('password')) {
 		next();

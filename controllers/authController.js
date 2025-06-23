@@ -27,6 +27,7 @@ const registerUser = asyncHandler(async (req, res) => {
 			companyName: user.companyName,
 			email: user.email,
 			role: user.role,
+			companyLogoUrl: user.companyLogoUrl,
 			token: generateToken(user._id),
 		});
 	} else {
@@ -48,6 +49,7 @@ const loginUser = asyncHandler(async (req, res) => {
 			companyName: user.companyName,
 			email: user.email,
 			role: user.role,
+			companyLogoUrl: user.companyLogoUrl,
 			token: generateToken(user._id),
 		});
 	} else {
@@ -69,6 +71,7 @@ const adminLogin = asyncHandler(async (req, res) => {
 			_id: user._id,
 			email: user.email,
 			role: user.role,
+			companyLogoUrl: user.companyLogoUrl,
 			token: generateToken(user._id),
 		});
 	} else {

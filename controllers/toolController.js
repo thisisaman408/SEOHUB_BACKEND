@@ -1,10 +1,9 @@
 const asyncHandler = require('express-async-handler');
 const Tool = require('../models/toolModel');
 const { getRedisClient } = require('../config/db');
-
+const Rating = require('../models/ratingModel');
 const safeJsonParse = (jsonString) => {
 	try {
-		// This will handle cases where the string might be 'undefined' or null
 		if (!jsonString || jsonString === 'undefined' || jsonString === 'null') {
 			return null;
 		}
@@ -19,7 +18,6 @@ const safeJsonParse = (jsonString) => {
 // @route   GET /api/tools/my-tools
 // @access  Private
 const getMyTools = asyncHandler(async (req, res) => {
-	// CORRECT: No cache for user-specific data.
 	const tools = await Tool.find({ submittedBy: req.user._id }).sort({
 		createdAt: -1,
 	});
@@ -178,7 +176,65 @@ const getToolById = asyncHandler(async (req, res) => {
 		throw new Error('Tool not found');
 	}
 });
+const rateTool = asyncHandler(async (req, res) => {
+	const { rating } = req.body;
+	const toolId = req.params.id;
+	const userId = req.user._id;
 
+	if (rating === undefined || rating < 1 || rating > 5) {
+		res.status(400);
+		throw new Error('Rating must be a number between 1 and 5');
+	}
+	const tool = await Tool.findById(toolId);
+	if (!tool) {
+		res.status(404);
+		throw new Error('Tool not found');
+	}
+	const existingRating = await Rating.findOne({ tool: toolId, user: userId });
+
+	if (existingRating) {
+		tool.totalRatingSum -= existingRating.rating;
+		existingRating.rating = rating;
+		await existingRating.save();
+
+		tool.totalRatingSum += rating;
+		tool.averageRating =
+			tool.numberOfRatings > 0 ? tool.totalRatingSum / tool.numberOfRatings : 0;
+
+		const updatedTool = await tool.save();
+		const redisClient = getRedisClient();
+		await redisClient.del('allTools');
+		await redisClient.del('featuredTools');
+		await redisClient.del(`tool:${toolId}`);
+
+		res.status(200).json({
+			message: 'Rating updated successfully',
+			averageRating: updatedTool.averageRating,
+			numberOfRatings: updatedTool.numberOfRatings,
+		});
+	} else {
+		const newRating = new Rating({
+			tool: toolId,
+			user: userId,
+			rating: rating,
+		});
+		await newRating.save();
+		tool.totalRatingSum += rating;
+		tool.numberOfRatings += 1;
+		tool.averageRating = tool.totalRatingSum / tool.numberOfRatings;
+		const updatedTool = await tool.save();
+		const redisClient = getRedisClient();
+		await redisClient.del('allTools');
+		await redisClient.del('featuredTools');
+		await redisClient.del(`tool:${toolId}`);
+
+		res.status(201).json({
+			message: 'Rating submitted successfully',
+			averageRating: updatedTool.averageRating,
+			numberOfRatings: updatedTool.numberOfRatings,
+		});
+	}
+});
 module.exports = {
 	submitTool,
 	updateTool,
@@ -186,4 +242,5 @@ module.exports = {
 	getFeaturedTools,
 	getToolById,
 	getMyTools,
+	rateTool,
 };

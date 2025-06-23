@@ -1,0 +1,9 @@
+google-generativeai
+pymongo
+bcrypt
+beautifulsoup4
+python-dotenv
+requests
+selenium
+webdriver_manager
+pyperclip
