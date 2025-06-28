@@ -5,11 +5,8 @@ let redisClient;
 
 const connectDB = async () => {
 	try {
-		// Connect to MongoDB
 		const conn = await mongoose.connect(process.env.MONGO_URI);
 		console.log(`MongoDB Connected: ${conn.connection.host}`);
-
-		// Connect to Redis
 		redisClient = redis.createClient({
 			url: process.env.REDIS_URL,
 		});

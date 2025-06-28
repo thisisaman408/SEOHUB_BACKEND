@@ -22,8 +22,33 @@ const toolLogoStorage = new CloudinaryStorage({
 	},
 });
 
+const toolMediaStorage = new CloudinaryStorage({
+	cloudinary,
+	params: (req, file) => {
+		const folder = `tool_media/${req.params.toolId || 'general'}`;
+
+		if (file.mimetype.startsWith('video/')) {
+			return {
+				folder: folder,
+				resource_type: 'video',
+				allowed_formats: ['mp4', 'mov', 'avi', 'mkv'],
+				transformation: [{ quality: 'auto', fetch_format: 'auto' }],
+			};
+		} else {
+			return {
+				folder: folder,
+				allowed_formats: ['jpeg', 'png', 'jpg', 'webp', 'gif'],
+				transformation: [
+					{ quality: 'auto', fetch_format: 'auto', width: 1920, crop: 'limit' },
+				],
+			};
+		}
+	},
+});
+
 module.exports = {
 	cloudinary,
 	companyLogoStorage,
 	toolLogoStorage,
+	toolMediaStorage,
 };

@@ -7,9 +7,7 @@ const generateToken = require('../utils/generateToken');
 // @access  Public
 const registerUser = asyncHandler(async (req, res) => {
 	const { companyName, email, password } = req.body;
-
 	const userExists = await User.findOne({ email });
-
 	if (userExists) {
 		res.status(400);
 		throw new Error('User already exists');
@@ -69,9 +67,12 @@ const adminLogin = asyncHandler(async (req, res) => {
 	if (user && (await user.matchPassword(password))) {
 		res.json({
 			_id: user._id,
+			companyName: user.companyName || '',
 			email: user.email,
 			role: user.role,
 			companyLogoUrl: user.companyLogoUrl,
+			createdAt: user.createdAt,
+			updatedAt: user.updatedAt,
 			token: generateToken(user._id),
 		});
 	} else {

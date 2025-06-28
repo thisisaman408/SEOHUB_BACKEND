@@ -1,6 +1,7 @@
 const asyncHandler = require('express-async-handler');
 const Tool = require('../models/toolModel');
 const User = require('../models/userModel');
+const Comment = require('../models/commentModel');
 const { getRedisClient } = require('../config/db');
 
 // @desc    Get dashboard statistics
@@ -47,7 +48,6 @@ const getPendingTools = asyncHandler(async (req, res) => {
 	);
 	res.json(tools);
 });
-
 // @desc    Get all approved tools for admin
 // @route   GET /api/admin/tools/approved
 // @access  Private/Admin
@@ -119,6 +119,61 @@ const deleteTool = asyncHandler(async (req, res) => {
 	}
 });
 
+// @desc Get reported comments
+// @route GET /api/admin/comments/reported
+// @access Private/Admin
+const getReportedComments = asyncHandler(async (req, res) => {
+	const reportedComments = await Comment.find({
+		$or: [{ status: 'reported' }, { 'reports.0': { $exists: true } }],
+	})
+		.populate('user', 'companyName email')
+		.populate('tool', 'name')
+		.sort({ updatedAt: -1 });
+
+	res.json(reportedComments);
+});
+
+// @desc Moderate comment
+// @route PUT /api/admin/comments/:commentId/moderate
+// @access Private/Admin
+const moderateComment = asyncHandler(async (req, res) => {
+	const { status } = req.body; // 'approved', 'rejected'
+
+	const comment = await Comment.findById(req.params.commentId);
+	if (!comment) {
+		res.status(404);
+		throw new Error('Comment not found');
+	}
+
+	comment.status = status;
+
+	if (status === 'approved') {
+		comment.reports = [];
+	}
+
+	await comment.save();
+
+	const redisClient = getRedisClient();
+	const pattern = `comments:${comment.tool}:*`;
+	const keys = await redisClient.keys(pattern);
+	if (keys.length > 0) {
+		await redisClient.del(keys);
+	}
+
+	res.json(comment);
+});
+const getCommentById = asyncHandler(async (req, res) => {
+	const comment = await Comment.findById(req.params.commentId)
+		.populate('user', 'companyName email companyLogoUrl')
+		.populate('tool', 'name slug');
+
+	if (!comment) {
+		res.status(404);
+		throw new Error('Comment not found');
+	}
+
+	res.json(comment);
+});
 module.exports = {
 	getAdminStats,
 	getPendingTools,
@@ -127,4 +182,7 @@ module.exports = {
 	getAllToolsAdmin,
 	updateToolStatus,
 	deleteTool,
+	getReportedComments,
+	moderateComment,
+	getCommentById,
 };
