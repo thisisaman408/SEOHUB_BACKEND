@@ -27,6 +27,11 @@ const userSchema = mongoose.Schema(
 			enum: ['listed', 'scraped'],
 			default: 'listed',
 		},
+		authProvider: {
+			type: String,
+			enum: ['email', 'google'],
+			default: 'email',
+		},
 	},
 	{
 		timestamps: true,

@@ -1,0 +1,2477 @@
+[
+  {
+    "name": "ChatGPT",
+    "tagline": "AI-powered conversational assistant for writing and productivity",
+    "description": "Advanced AI chatbot that can help with writing, coding, analysis, and creative tasks",
+    "websiteUrl": "https://chat.openai.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "chatbot",
+      "conversation",
+      "assistant"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#8B5CF6",
+      "content": [
+        {
+          "icon": "star",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Copy.ai",
+    "tagline": "AI copywriter for marketing content and sales copy",
+    "description": "Generate high-converting copy for ads, emails, websites, and social media",
+    "websiteUrl": "https://copy.ai",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "copywriting",
+      "marketing",
+      "content"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#F59E0B",
+      "content": [
+        {
+          "icon": "cpu",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Jasper AI",
+    "tagline": "AI content generator for marketing teams",
+    "description": "Create blog posts, social media content, and marketing copy with AI",
+    "websiteUrl": "https://jasper.ai",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "content",
+      "writing",
+      "blog"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#8B5CF6",
+      "content": [
+        {
+          "icon": "target",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Grammarly",
+    "tagline": "AI writing assistant for grammar and style",
+    "description": "Improve your writing with AI-powered grammar checking and style suggestions",
+    "websiteUrl": "https://grammarly.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "writing",
+      "content",
+      "grammar"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#3B82F6",
+      "content": [
+        {
+          "icon": "target",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Canva AI",
+    "tagline": "AI-powered design tool for creating visual content",
+    "description": "Create stunning designs, presentations, and social media graphics with AI assistance",
+    "websiteUrl": "https://canva.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "design",
+      "graphics",
+      "creative"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#8B5CF6",
+      "content": [
+        {
+          "icon": "chart",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Semrush",
+    "tagline": "AI-enhanced SEO and marketing toolkit",
+    "description": "Comprehensive SEO tools with AI insights for keyword research and competitor analysis",
+    "websiteUrl": "https://semrush.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "seo",
+      "search",
+      "optimization"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#10B981",
+      "content": [
+        {
+          "icon": "target",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Surfer SEO",
+    "tagline": "AI-powered SEO content optimization",
+    "description": "Optimize your content for search engines with AI-driven SEO recommendations",
+    "websiteUrl": "https://surferseo.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "seo",
+      "search",
+      "optimization"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#EF4444",
+      "content": [
+        {
+          "icon": "zap",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "HubSpot AI",
+    "tagline": "AI-powered marketing automation platform",
+    "description": "Complete marketing, sales, and service platform enhanced with AI capabilities",
+    "websiteUrl": "https://hubspot.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "marketing",
+      "advertising",
+      "promotion"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#84CC16",
+      "content": [
+        {
+          "icon": "brain",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Writesonic",
+    "tagline": "AI writer for content creation and copywriting",
+    "description": "Generate articles, ads, emails, and website copy with advanced AI technology",
+    "websiteUrl": "https://writesonic.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "writing",
+      "content",
+      "grammar"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#3B82F6",
+      "content": [
+        {
+          "icon": "sparkles",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Rytr",
+    "tagline": "AI writing assistant for content creation",
+    "description": "Create high-quality content for blogs, emails, and ads in seconds",
+    "websiteUrl": "https://rytr.me",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "writing",
+      "content",
+      "grammar"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#EF4444",
+      "content": [
+        {
+          "icon": "target",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Loom AI",
+    "tagline": "AI-powered video messaging and screen recording",
+    "description": "Record and share AI-enhanced video messages for better communication",
+    "websiteUrl": "https://loom.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "communication",
+      "messaging",
+      "collaboration"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#8B5CF6",
+      "content": [
+        {
+          "icon": "zap",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Notion AI",
+    "tagline": "AI-powered workspace for notes and collaboration",
+    "description": "Enhance your productivity with AI writing assistance in your workspace",
+    "websiteUrl": "https://notion.so",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "productivity",
+      "workflow",
+      "efficiency"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#06B6D4",
+      "content": [
+        {
+          "icon": "star",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Midjourney",
+    "tagline": "AI image generator for creative visuals",
+    "description": "Create stunning artwork and images from text descriptions using AI",
+    "websiteUrl": "https://midjourney.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "design",
+      "graphics",
+      "creative"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#06B6D4",
+      "content": [
+        {
+          "icon": "target",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "DALL-E 2",
+    "tagline": "AI system for creating realistic images from text",
+    "description": "Generate, edit, and create variations of images with AI technology",
+    "websiteUrl": "https://openai.com/dall-e-2",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "image",
+      "visual",
+      "creative"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#3B82F6",
+      "content": [
+        {
+          "icon": "rocket",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Speechify",
+    "tagline": "AI-powered text-to-speech tool",
+    "description": "Convert any text into natural-sounding speech with AI voices",
+    "websiteUrl": "https://speechify.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "productivity",
+      "workflow",
+      "efficiency"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#84CC16",
+      "content": [
+        {
+          "icon": "rocket",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Zapier AI",
+    "tagline": "AI-powered workflow automation",
+    "description": "Automate repetitive tasks and workflows with AI-enhanced integrations",
+    "websiteUrl": "https://zapier.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "automation",
+      "workflow",
+      "integration"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#84CC16",
+      "content": [
+        {
+          "icon": "rocket",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Claude AI",
+    "tagline": "AI assistant for analysis and content creation",
+    "description": "Helpful AI assistant for writing, research, analysis, and creative tasks",
+    "websiteUrl": "https://claude.ai",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "chatbot",
+      "conversation",
+      "assistant"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#06B6D4",
+      "content": [
+        {
+          "icon": "star",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Gamma",
+    "tagline": "AI-powered presentation maker",
+    "description": "Create beautiful presentations, documents, and websites with AI",
+    "websiteUrl": "https://gamma.app",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "presentation",
+      "slides",
+      "design"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#F59E0B",
+      "content": [
+        {
+          "icon": "target",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Otter.ai",
+    "tagline": "AI-powered meeting transcription and notes",
+    "description": "Automatically transcribe and summarize meetings with AI technology",
+    "websiteUrl": "https://otter.ai",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "productivity",
+      "workflow",
+      "efficiency"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#3B82F6",
+      "content": [
+        {
+          "icon": "zap",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Brandwatch",
+    "tagline": "AI-powered social media monitoring",
+    "description": "Monitor brand mentions and analyze social media data with AI insights",
+    "websiteUrl": "https://brandwatch.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "social media",
+      "marketing",
+      "engagement"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#84CC16",
+      "content": [
+        {
+          "icon": "star",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Typeface",
+    "tagline": "AI content creation platform for enterprises",
+    "description": "Enterprise-grade AI for creating personalized content at scale",
+    "websiteUrl": "https://typeface.ai",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "content",
+      "writing",
+      "blog"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#EF4444",
+      "content": [
+        {
+          "icon": "cpu",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Synthesia",
+    "tagline": "AI video generator with virtual presenters",
+    "description": "Create professional videos with AI avatars and text-to-speech",
+    "websiteUrl": "https://synthesia.io",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "video",
+      "multimedia",
+      "content"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#3B82F6",
+      "content": [
+        {
+          "icon": "brain",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "RunwayML",
+    "tagline": "AI tools for creative content generation",
+    "description": "Suite of AI tools for video editing, image generation, and creative projects",
+    "websiteUrl": "https://runwayml.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "creative",
+      "design",
+      "art"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#84CC16",
+      "content": [
+        {
+          "icon": "zap",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Descript",
+    "tagline": "AI-powered audio and video editing",
+    "description": "Edit audio and video by editing text with AI transcription",
+    "websiteUrl": "https://descript.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "editing",
+      "video",
+      "audio"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#3B82F6",
+      "content": [
+        {
+          "icon": "sparkles",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Murf AI",
+    "tagline": "AI voice generator for voiceovers",
+    "description": "Create realistic voiceovers and speech from text using AI",
+    "websiteUrl": "https://murf.ai",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "voice",
+      "audio",
+      "speech"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#F59E0B",
+      "content": [
+        {
+          "icon": "zap",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Pictory",
+    "tagline": "AI video creation from text and articles",
+    "description": "Turn articles and scripts into engaging videos automatically",
+    "websiteUrl": "https://pictory.ai",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "video",
+      "multimedia",
+      "content"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#EF4444",
+      "content": [
+        {
+          "icon": "brain",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Scalenut",
+    "tagline": "AI-powered SEO and content marketing",
+    "description": "Complete SEO and content marketing platform with AI assistance",
+    "websiteUrl": "https://scalenut.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "seo",
+      "search",
+      "optimization"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#F59E0B",
+      "content": [
+        {
+          "icon": "zap",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "MarketMuse",
+    "tagline": "AI content planning and optimization",
+    "description": "AI-driven content strategy and optimization for better search rankings",
+    "websiteUrl": "https://marketmuse.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "seo",
+      "content",
+      "optimization"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#10B981",
+      "content": [
+        {
+          "icon": "star",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Frase",
+    "tagline": "AI content optimization for SEO",
+    "description": "Research, write, and optimize SEO content with AI assistance",
+    "websiteUrl": "https://frase.io",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "seo",
+      "search",
+      "optimization"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#8B5CF6",
+      "content": [
+        {
+          "icon": "rocket",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "ContentKing",
+    "tagline": "AI-powered SEO monitoring and optimization",
+    "description": "Real-time SEO monitoring and content optimization with AI insights",
+    "websiteUrl": "https://contentkingapp.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "seo",
+      "search",
+      "optimization"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#F59E0B",
+      "content": [
+        {
+          "icon": "cpu",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Clearscope",
+    "tagline": "AI content optimization for search rankings",
+    "description": "Optimize your content for better search performance with AI",
+    "websiteUrl": "https://clearscope.io",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "seo",
+      "search",
+      "optimization"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#84CC16",
+      "content": [
+        {
+          "icon": "zap",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Persado",
+    "tagline": "AI-powered marketing language optimization",
+    "description": "Generate and optimize marketing messages with AI for better engagement",
+    "websiteUrl": "https://persado.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "marketing",
+      "advertising",
+      "promotion"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#F59E0B",
+      "content": [
+        {
+          "icon": "brain",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Phrasee",
+    "tagline": "AI for email marketing and copywriting",
+    "description": "Generate and optimize email subject lines and marketing copy with AI",
+    "websiteUrl": "https://phrasee.co",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "email",
+      "marketing",
+      "automation"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#8B5CF6",
+      "content": [
+        {
+          "icon": "star",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Optimizely",
+    "tagline": "AI-powered experimentation and optimization",
+    "description": "A/B testing and website optimization platform enhanced with AI",
+    "websiteUrl": "https://optimizely.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "optimization",
+      "testing",
+      "conversion"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#10B981",
+      "content": [
+        {
+          "icon": "cpu",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Dynamic Yield",
+    "tagline": "AI personalization and optimization platform",
+    "description": "Personalize customer experiences with AI-driven recommendations",
+    "websiteUrl": "https://dynamicyield.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "personalization",
+      "recommendation",
+      "customization"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#8B5CF6",
+      "content": [
+        {
+          "icon": "rocket",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Albert AI",
+    "tagline": "Autonomous AI for digital marketing",
+    "description": "Self-optimizing AI platform for programmatic advertising and marketing",
+    "websiteUrl": "https://albert.ai",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "advertising",
+      "marketing",
+      "ppc"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#8B5CF6",
+      "content": [
+        {
+          "icon": "rocket",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Seventh Sense",
+    "tagline": "AI email delivery time optimization",
+    "description": "Optimize email send times using AI for better engagement rates",
+    "websiteUrl": "https://seventhsense.ai",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "email",
+      "marketing",
+      "automation"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#10B981",
+      "content": [
+        {
+          "icon": "zap",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Drift",
+    "tagline": "AI-powered conversational marketing platform",
+    "description": "Engage website visitors with AI chatbots and conversational marketing",
+    "websiteUrl": "https://drift.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "chatbot",
+      "conversation",
+      "customer service"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#EF4444",
+      "content": [
+        {
+          "icon": "zap",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Intercom",
+    "tagline": "AI customer messaging and support platform",
+    "description": "Customer support and engagement platform with AI-powered features",
+    "websiteUrl": "https://intercom.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "customer support",
+      "service",
+      "help desk"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#F59E0B",
+      "content": [
+        {
+          "icon": "target",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Zendesk AI",
+    "tagline": "AI-enhanced customer service platform",
+    "description": "Customer service software with AI automation and insights",
+    "websiteUrl": "https://zendesk.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "customer support",
+      "service",
+      "help desk"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#84CC16",
+      "content": [
+        {
+          "icon": "rocket",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Freshworks AI",
+    "tagline": "AI-powered business software suite",
+    "description": "CRM, support, and marketing software enhanced with AI capabilities",
+    "websiteUrl": "https://freshworks.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "business",
+      "enterprise",
+      "software"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#8B5CF6",
+      "content": [
+        {
+          "icon": "target",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Salesforce Einstein",
+    "tagline": "AI for CRM and sales automation",
+    "description": "AI-powered insights and automation for sales and customer relationship management",
+    "websiteUrl": "https://salesforce.com/einstein",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "crm",
+      "sales",
+      "customer management"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#F59E0B",
+      "content": [
+        {
+          "icon": "brain",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Monday.com AI",
+    "tagline": "AI-enhanced project management platform",
+    "description": "Work management platform with AI automation and insights",
+    "websiteUrl": "https://monday.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "project management",
+      "collaboration",
+      "workflow"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#8B5CF6",
+      "content": [
+        {
+          "icon": "star",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "ClickUp AI",
+    "tagline": "AI-powered productivity and project management",
+    "description": "All-in-one workspace with AI writing assistant and task automation",
+    "websiteUrl": "https://clickup.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "productivity",
+      "workflow",
+      "efficiency"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#F59E0B",
+      "content": [
+        {
+          "icon": "cpu",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Trello AI",
+    "tagline": "AI-enhanced team collaboration and project management",
+    "description": "Visual project management with AI-powered automation and insights",
+    "websiteUrl": "https://trello.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "project management",
+      "collaboration",
+      "workflow"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#8B5CF6",
+      "content": [
+        {
+          "icon": "rocket",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Asana AI",
+    "tagline": "AI-powered work management platform",
+    "description": "Team collaboration and project management with AI automation",
+    "websiteUrl": "https://asana.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "project management",
+      "collaboration",
+      "workflow"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#06B6D4",
+      "content": [
+        {
+          "icon": "chart",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Buffer AI",
+    "tagline": "AI-enhanced social media management",
+    "description": "Social media scheduling and analytics with AI-powered insights",
+    "websiteUrl": "https://buffer.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "social media",
+      "marketing",
+      "engagement"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#F59E0B",
+      "content": [
+        {
+          "icon": "target",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Hootsuite AI",
+    "tagline": "AI-powered social media management platform",
+    "description": "Comprehensive social media management with AI content suggestions",
+    "websiteUrl": "https://hootsuite.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "social media",
+      "marketing",
+      "engagement"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#10B981",
+      "content": [
+        {
+          "icon": "zap",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Sprout Social",
+    "tagline": "AI-enhanced social media management and analytics",
+    "description": "Social media management platform with AI-powered insights and automation",
+    "websiteUrl": "https://sproutsocial.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "social media",
+      "marketing",
+      "engagement"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#84CC16",
+      "content": [
+        {
+          "icon": "star",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Later AI",
+    "tagline": "AI-powered social media scheduling and analytics",
+    "description": "Visual social media scheduler with AI content optimization",
+    "websiteUrl": "https://later.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "social media",
+      "marketing",
+      "engagement"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#84CC16",
+      "content": [
+        {
+          "icon": "sparkles",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Socialbee AI",
+    "tagline": "AI-enhanced social media management tool",
+    "description": "Social media scheduling and content curation with AI assistance",
+    "websiteUrl": "https://socialbee.io",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "social media",
+      "marketing",
+      "engagement"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#84CC16",
+      "content": [
+        {
+          "icon": "chart",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "CoSchedule AI",
+    "tagline": "AI-powered marketing calendar and automation",
+    "description": "Marketing calendar and workflow automation with AI optimization",
+    "websiteUrl": "https://coschedule.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "marketing",
+      "advertising",
+      "promotion"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#EF4444",
+      "content": [
+        {
+          "icon": "cpu",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Mailchimp AI",
+    "tagline": "AI-enhanced email marketing and automation",
+    "description": "Email marketing platform with AI-powered personalization and optimization",
+    "websiteUrl": "https://mailchimp.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "email",
+      "marketing",
+      "automation"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#84CC16",
+      "content": [
+        {
+          "icon": "chart",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "Constant Contact AI",
+    "tagline": "AI-powered email marketing and automation",
+    "description": "Email marketing and automation tools enhanced with AI capabilities",
+    "websiteUrl": "https://constantcontact.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "email",
+      "marketing",
+      "automation"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#10B981",
+      "content": [
+        {
+          "icon": "brain",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  },
+  {
+    "name": "ConvertKit AI",
+    "tagline": "AI-enhanced email marketing for creators",
+    "description": "Email marketing platform designed for creators with AI optimization",
+    "websiteUrl": "https://convertkit.com",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "email",
+      "marketing",
+      "automation"
+    ],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "status": "approved",
+    "isFeatured": false,
+    "logoUrl": "",
+    "visual": {
+      "type": "gradient",
+      "color": "#8B5CF6",
+      "content": [
+        {
+          "icon": "cpu",
+          "text": "AI Powered"
+        }
+      ]
+    },
+    "source": "scraped",
+    "analytics": {
+      "totalViews": 0,
+      "uniqueViews": 0,
+      "weeklyViews": 0,
+      "monthlyViews": 0
+    },
+    "commentStats": {
+      "totalComments": 0,
+      "approvedComments": 0
+    },
+    "mediaStats": {
+      "totalMedia": 0,
+      "screenshots": 0,
+      "videos": 0
+    }
+  }
+]
