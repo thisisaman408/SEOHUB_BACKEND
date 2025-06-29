@@ -1,0 +1,505 @@
+{
+  "summary": {
+    "total_tools": 55,
+    "successful_downloads": 55,
+    "failed_downloads": 0,
+    "success_rate": "100.0%"
+  },
+  "results": [
+    {
+      "name": "ChatGPT",
+      "slug": "chatgpt",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/chat.openai.com",
+      "file_size": 7024,
+      "website_url": "https://chat.openai.com"
+    },
+    {
+      "name": "Copy.ai",
+      "slug": "copyai",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/copy.ai",
+      "file_size": 6385,
+      "website_url": "https://copy.ai"
+    },
+    {
+      "name": "Jasper AI",
+      "slug": "jasper-ai",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/jasper.ai",
+      "file_size": 9263,
+      "website_url": "https://jasper.ai"
+    },
+    {
+      "name": "Grammarly",
+      "slug": "grammarly",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/grammarly.com",
+      "file_size": 3655,
+      "website_url": "https://grammarly.com"
+    },
+    {
+      "name": "Canva AI",
+      "slug": "canva-ai",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/canva.com",
+      "file_size": 16303,
+      "website_url": "https://canva.com"
+    },
+    {
+      "name": "Semrush",
+      "slug": "semrush",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/semrush.com",
+      "file_size": 3436,
+      "website_url": "https://semrush.com"
+    },
+    {
+      "name": "Surfer SEO",
+      "slug": "surfer-seo",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/surferseo.com",
+      "file_size": 12675,
+      "website_url": "https://surferseo.com"
+    },
+    {
+      "name": "HubSpot AI",
+      "slug": "hubspot-ai",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/hubspot.com",
+      "file_size": 8692,
+      "website_url": "https://hubspot.com"
+    },
+    {
+      "name": "Writesonic",
+      "slug": "writesonic",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/writesonic.com",
+      "file_size": 6165,
+      "website_url": "https://writesonic.com"
+    },
+    {
+      "name": "Rytr",
+      "slug": "rytr",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/rytr.me",
+      "file_size": 8787,
+      "website_url": "https://rytr.me"
+    },
+    {
+      "name": "Loom AI",
+      "slug": "loom-ai",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/loom.com",
+      "file_size": 15736,
+      "website_url": "https://loom.com"
+    },
+    {
+      "name": "Notion AI",
+      "slug": "notion-ai",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/notion.so",
+      "file_size": 6287,
+      "website_url": "https://notion.so"
+    },
+    {
+      "name": "Midjourney",
+      "slug": "midjourney",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/midjourney.com",
+      "file_size": 17764,
+      "website_url": "https://midjourney.com"
+    },
+    {
+      "name": "DALL-E 2",
+      "slug": "dall-e-2",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/openai.com",
+      "file_size": 7024,
+      "website_url": "https://openai.com/dall-e-2"
+    },
+    {
+      "name": "Speechify",
+      "slug": "speechify",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/speechify.com",
+      "file_size": 11264,
+      "website_url": "https://speechify.com"
+    },
+    {
+      "name": "Zapier AI",
+      "slug": "zapier-ai",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/zapier.com",
+      "file_size": 7697,
+      "website_url": "https://zapier.com"
+    },
+    {
+      "name": "Claude AI",
+      "slug": "claude-ai",
+      "status": "downloaded",
+      "source": "Favicon",
+      "source_url": "https://claude.ai/favicon.ico",
+      "file_size": 15086,
+      "website_url": "https://claude.ai"
+    },
+    {
+      "name": "Gamma",
+      "slug": "gamma",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/gamma.app",
+      "file_size": 7155,
+      "website_url": "https://gamma.app"
+    },
+    {
+      "name": "Otter.ai",
+      "slug": "otterai",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/otter.ai",
+      "file_size": 8759,
+      "website_url": "https://otter.ai"
+    },
+    {
+      "name": "Brandwatch",
+      "slug": "brandwatch",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/brandwatch.com",
+      "file_size": 9231,
+      "website_url": "https://brandwatch.com"
+    },
+    {
+      "name": "Typeface",
+      "slug": "typeface",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/typeface.ai",
+      "file_size": 1293,
+      "website_url": "https://typeface.ai"
+    },
+    {
+      "name": "Synthesia",
+      "slug": "synthesia",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/synthesia.io",
+      "file_size": 2142,
+      "website_url": "https://synthesia.io"
+    },
+    {
+      "name": "RunwayML",
+      "slug": "runwayml",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/runwayml.com",
+      "file_size": 3153,
+      "website_url": "https://runwayml.com"
+    },
+    {
+      "name": "Descript",
+      "slug": "descript",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/descript.com",
+      "file_size": 5479,
+      "website_url": "https://descript.com"
+    },
+    {
+      "name": "Murf AI",
+      "slug": "murf-ai",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/murf.ai",
+      "file_size": 6075,
+      "website_url": "https://murf.ai"
+    },
+    {
+      "name": "Pictory",
+      "slug": "pictory",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/pictory.ai",
+      "file_size": 21431,
+      "website_url": "https://pictory.ai"
+    },
+    {
+      "name": "Scalenut",
+      "slug": "scalenut",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/scalenut.com",
+      "file_size": 2165,
+      "website_url": "https://scalenut.com"
+    },
+    {
+      "name": "MarketMuse",
+      "slug": "marketmuse",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/marketmuse.com",
+      "file_size": 6762,
+      "website_url": "https://marketmuse.com"
+    },
+    {
+      "name": "Frase",
+      "slug": "frase",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/frase.io",
+      "file_size": 7934,
+      "website_url": "https://frase.io"
+    },
+    {
+      "name": "ContentKing",
+      "slug": "contentking",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/contentkingapp.com",
+      "file_size": 14645,
+      "website_url": "https://contentkingapp.com"
+    },
+    {
+      "name": "Clearscope",
+      "slug": "clearscope",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/clearscope.io",
+      "file_size": 16963,
+      "website_url": "https://clearscope.io"
+    },
+    {
+      "name": "Persado",
+      "slug": "persado",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/persado.com",
+      "file_size": 4979,
+      "website_url": "https://persado.com"
+    },
+    {
+      "name": "Phrasee",
+      "slug": "phrasee",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/phrasee.co",
+      "file_size": 15075,
+      "website_url": "https://phrasee.co"
+    },
+    {
+      "name": "Optimizely",
+      "slug": "optimizely",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/optimizely.com",
+      "file_size": 11446,
+      "website_url": "https://optimizely.com"
+    },
+    {
+      "name": "Dynamic Yield",
+      "slug": "dynamic-yield",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/dynamicyield.com",
+      "file_size": 5523,
+      "website_url": "https://dynamicyield.com"
+    },
+    {
+      "name": "Albert AI",
+      "slug": "albert-ai",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/albert.ai",
+      "file_size": 7472,
+      "website_url": "https://albert.ai"
+    },
+    {
+      "name": "Seventh Sense",
+      "slug": "seventh-sense",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/seventhsense.ai",
+      "file_size": 15137,
+      "website_url": "https://seventhsense.ai"
+    },
+    {
+      "name": "Drift",
+      "slug": "drift",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/drift.com",
+      "file_size": 8017,
+      "website_url": "https://drift.com"
+    },
+    {
+      "name": "Intercom",
+      "slug": "intercom",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/intercom.com",
+      "file_size": 8226,
+      "website_url": "https://intercom.com"
+    },
+    {
+      "name": "Zendesk AI",
+      "slug": "zendesk-ai",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/zendesk.com",
+      "file_size": 9392,
+      "website_url": "https://zendesk.com"
+    },
+    {
+      "name": "Freshworks AI",
+      "slug": "freshworks-ai",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/freshworks.com",
+      "file_size": 16675,
+      "website_url": "https://freshworks.com"
+    },
+    {
+      "name": "Salesforce Einstein",
+      "slug": "salesforce-einstein",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/salesforce.com",
+      "file_size": 11878,
+      "website_url": "https://salesforce.com/einstein"
+    },
+    {
+      "name": "Monday.com AI",
+      "slug": "mondaycom-ai",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/monday.com",
+      "file_size": 2009,
+      "website_url": "https://monday.com"
+    },
+    {
+      "name": "ClickUp AI",
+      "slug": "clickup-ai",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/clickup.com",
+      "file_size": 2234,
+      "website_url": "https://clickup.com"
+    },
+    {
+      "name": "Trello AI",
+      "slug": "trello-ai",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/trello.com",
+      "file_size": 4379,
+      "website_url": "https://trello.com"
+    },
+    {
+      "name": "Asana AI",
+      "slug": "asana-ai",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/asana.com",
+      "file_size": 3225,
+      "website_url": "https://asana.com"
+    },
+    {
+      "name": "Buffer AI",
+      "slug": "buffer-ai",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/buffer.com",
+      "file_size": 11125,
+      "website_url": "https://buffer.com"
+    },
+    {
+      "name": "Hootsuite AI",
+      "slug": "hootsuite-ai",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/hootsuite.com",
+      "file_size": 15363,
+      "website_url": "https://hootsuite.com"
+    },
+    {
+      "name": "Sprout Social",
+      "slug": "sprout-social",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/sproutsocial.com",
+      "file_size": 2226,
+      "website_url": "https://sproutsocial.com"
+    },
+    {
+      "name": "Later AI",
+      "slug": "later-ai",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/later.com",
+      "file_size": 2126,
+      "website_url": "https://later.com"
+    },
+    {
+      "name": "Socialbee AI",
+      "slug": "socialbee-ai",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/socialbee.io",
+      "file_size": 7235,
+      "website_url": "https://socialbee.io"
+    },
+    {
+      "name": "CoSchedule AI",
+      "slug": "coschedule-ai",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/coschedule.com",
+      "file_size": 19137,
+      "website_url": "https://coschedule.com"
+    },
+    {
+      "name": "Mailchimp AI",
+      "slug": "mailchimp-ai",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/mailchimp.com",
+      "file_size": 19395,
+      "website_url": "https://mailchimp.com"
+    },
+    {
+      "name": "Constant Contact AI",
+      "slug": "constant-contact-ai",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/constantcontact.com",
+      "file_size": 10495,
+      "website_url": "https://constantcontact.com"
+    },
+    {
+      "name": "ConvertKit AI",
+      "slug": "convertkit-ai",
+      "status": "downloaded",
+      "source": "Clearbit",
+      "source_url": "https://logo.clearbit.com/convertkit.com",
+      "file_size": 9341,
+      "website_url": "https://convertkit.com"
+    }
+  ]
+}

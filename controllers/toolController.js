@@ -247,6 +247,16 @@ const rateTool = asyncHandler(async (req, res) => {
 		user: req.user._id,
 	});
 
+	if (typeof tool.totalRatingSum !== 'number' || isNaN(tool.totalRatingSum)) {
+		tool.totalRatingSum = 0;
+	}
+	if (typeof tool.numberOfRatings !== 'number' || isNaN(tool.numberOfRatings)) {
+		tool.numberOfRatings = 0;
+	}
+	if (typeof tool.averageRating !== 'number' || isNaN(tool.averageRating)) {
+		tool.averageRating = 0;
+	}
+
 	if (existingRating) {
 		// Update existing rating
 		const oldRating = existingRating.rating;
@@ -272,16 +282,29 @@ const rateTool = asyncHandler(async (req, res) => {
 
 	await tool.save();
 
-	// Clear cache
+	// ✅ COMPREHENSIVE CACHE CLEARING
 	const redisClient = getRedisClient();
-	await redisClient.del('allTools');
-	await redisClient.del('featuredTools');
-	await redisClient.del(`tool:${toolId}`);
+	try {
+		// Clear all tool-related caches
+		await Promise.all([
+			redisClient.del('allTools'),
+			redisClient.del('featuredTools'),
+			redisClient.del(`tool:${toolId}`),
+			redisClient.del(`tool:slug:${tool.slug}`),
+			// Clear any search result caches that might contain this tool
+			redisClient
+				.keys('search:*')
+				.then((keys) => keys.length > 0 && redisClient.del(keys)),
+		]);
+	} catch (cacheError) {
+		console.error('Cache clearing error:', cacheError);
+		// Don't fail the request if cache clearing fails
+	}
 
 	res.json({
 		success: true,
 		message: 'Rating saved successfully',
-		averageRating: tool.averageRating,
+		averageRating: Number(tool.averageRating.toFixed(1)),
 		numberOfRatings: tool.numberOfRatings,
 		userRating: rating,
 	});
