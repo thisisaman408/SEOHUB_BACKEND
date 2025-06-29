@@ -33,6 +33,7 @@ const {
 
 const {
 	trackView,
+	trackClick,
 	getToolAnalytics,
 } = require('../controllers/viewController');
 
@@ -114,5 +115,7 @@ router
 router
 	.route('/:toolId/comments/:commentId/report')
 	.post(protect, validateToolId, reportComment);
+
+router.route('/:toolId/click').post(validateToolId, trackClick);
 
 module.exports = router;

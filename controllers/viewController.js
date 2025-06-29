@@ -1,11 +1,10 @@
-// controllers/viewController.js
 const asyncHandler = require('express-async-handler');
 const ToolView = require('../models/toolViewModel');
 const Tool = require('../models/toolModel');
 const { getRedisClient } = require('../config/db');
 const crypto = require('crypto');
+const Click = require('../models/clickModel');
 
-// Generate session ID for anonymous users
 const generateSessionId = (req) => {
 	const userAgent = req.get('User-Agent') || '';
 	const ip = req.ip || req.connection.remoteAddress;
@@ -17,6 +16,43 @@ const generateSessionId = (req) => {
 		.digest('hex')
 		.substring(0, 32);
 };
+
+// @desc Track external click
+// @route POST /api/tools/:toolId/click
+// @access Public
+const trackClick = asyncHandler(async (req, res) => {
+	const { toolId } = req.params;
+	const { clickType = 'website', source = 'marketplace' } = req.body;
+
+	const tool = await Tool.findById(toolId);
+	if (!tool) {
+		res.status(404);
+		throw new Error('Tool not found');
+	}
+
+	const sessionId = req.user?.id || generateSessionId(req);
+	const ipAddress = req.ip || req.connection.remoteAddress;
+	const userAgent = req.get('User-Agent') || '';
+
+	try {
+		// Create click record
+		await Click.create({
+			tool: toolId,
+			user: req.user?._id || null,
+			sessionId,
+			ipAddress,
+			userAgent,
+			clickType,
+			source,
+			country: req.get('CF-IPCountry') || 'Unknown',
+		});
+
+		res.json({ message: 'Click tracked successfully' });
+	} catch (error) {
+		console.error('Click tracking error:', error);
+		res.json({ message: 'Request processed' });
+	}
+});
 
 // @desc Track tool view
 // @route POST /api/tools/:toolId/view
@@ -119,7 +155,6 @@ const getToolAnalytics = asyncHandler(async (req, res) => {
 		throw new Error('Tool not found');
 	}
 
-	// Check if user owns the tool or is admin
 	if (
 		tool.submittedBy.toString() !== req.user._id.toString() &&
 		req.user.role !== 'admin'
@@ -128,66 +163,139 @@ const getToolAnalytics = asyncHandler(async (req, res) => {
 		throw new Error('Not authorized to view analytics');
 	}
 
-	// Calculate date range
-	let startDate;
+	let startDate, previousStartDate;
+	const endDate = new Date();
+
 	switch (period) {
 		case '7d':
 			startDate = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
+			previousStartDate = new Date(Date.now() - 14 * 24 * 60 * 60 * 1000);
 			break;
 		case '30d':
 			startDate = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);
+			previousStartDate = new Date(Date.now() - 60 * 24 * 60 * 60 * 1000);
 			break;
 		case '90d':
 			startDate = new Date(Date.now() - 90 * 24 * 60 * 60 * 1000);
+			previousStartDate = new Date(Date.now() - 180 * 24 * 60 * 60 * 1000);
 			break;
 		default:
 			startDate = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);
+			previousStartDate = new Date(Date.now() - 60 * 24 * 60 * 60 * 1000);
 	}
 
-	// Aggregation pipeline for detailed analytics
-	const analytics = await ToolView.aggregate([
+	const previousEndDate = startDate;
+
+	const [currentViews, previousViews, currentClicks, previousClicks] =
+		await Promise.all([
+			ToolView.countDocuments({
+				tool: tool._id,
+				createdAt: { $gte: startDate, $lte: endDate },
+			}),
+			ToolView.countDocuments({
+				tool: tool._id,
+				createdAt: { $gte: previousStartDate, $lt: previousEndDate },
+			}),
+			Click.countDocuments({
+				tool: tool._id,
+				createdAt: { $gte: startDate, $lte: endDate },
+			}),
+			Click.countDocuments({
+				tool: tool._id,
+				createdAt: { $gte: previousStartDate, $lt: previousEndDate },
+			}),
+		]);
+
+	const [currentUniqueVisitors, previousUniqueVisitors] = await Promise.all([
+		ToolView.distinct('sessionId', {
+			tool: tool._id,
+			createdAt: { $gte: startDate, $lte: endDate },
+		}).then((sessions) => sessions.length),
+		ToolView.distinct('sessionId', {
+			tool: tool._id,
+			createdAt: { $gte: previousStartDate, $lt: previousEndDate },
+		}).then((sessions) => sessions.length),
+	]);
+
+	const viewsChange =
+		previousViews > 0
+			? ((currentViews - previousViews) / previousViews) * 100
+			: 0;
+	const visitorsChange =
+		previousUniqueVisitors > 0
+			? ((currentUniqueVisitors - previousUniqueVisitors) /
+					previousUniqueVisitors) *
+			  100
+			: 0;
+	const clicksChange =
+		previousClicks > 0
+			? ((currentClicks - previousClicks) / previousClicks) * 100
+			: 0;
+
+	const clickThroughRate =
+		currentViews > 0 ? (currentClicks / currentViews) * 100 : 0;
+	const previousCTR =
+		previousViews > 0 ? (previousClicks / previousViews) * 100 : 0;
+	const ctrChange =
+		previousCTR > 0
+			? ((clickThroughRate - previousCTR) / previousCTR) * 100
+			: 0;
+
+	const dailyAnalytics = await ToolView.aggregate([
 		{
 			$match: {
 				tool: tool._id,
-				createdAt: { $gte: startDate },
+				createdAt: { $gte: startDate, $lte: endDate },
 			},
 		},
 		{
 			$group: {
 				_id: {
 					date: { $dateToString: { format: '%Y-%m-%d', date: '$createdAt' } },
-					source: '$source',
 				},
 				views: { $sum: 1 },
-				uniqueUsers: { $addToSet: '$sessionId' },
+				uniqueVisitors: { $addToSet: '$sessionId' },
 				avgDuration: { $avg: '$viewDuration' },
-				countries: { $addToSet: '$country' },
+			},
+		},
+		{
+			$project: {
+				date: '$_id.date',
+				views: 1,
+				uniqueViews: { $size: '$uniqueVisitors' },
+				avgDuration: 1,
+			},
+		},
+		{ $sort: { date: 1 } },
+	]);
+
+	const trafficSources = await ToolView.aggregate([
+		{
+			$match: {
+				tool: tool._id,
+				createdAt: { $gte: startDate, $lte: endDate },
 			},
 		},
 		{
 			$group: {
-				_id: '$_id.date',
-				totalViews: { $sum: '$views' },
-				uniqueViews: { $sum: { $size: '$uniqueUsers' } },
-				avgDuration: { $avg: '$avgDuration' },
-				sources: {
-					$push: {
-						source: '$_id.source',
-						views: '$views',
-					},
-				},
-				countries: { $addToSet: '$countries' },
+				_id: '$source',
+				visits: { $sum: 1 },
 			},
 		},
-		{ $sort: { _id: 1 } },
+		{
+			$project: {
+				source: '$_id',
+				visits: 1,
+			},
+		},
+		{ $sort: { visits: -1 } },
 	]);
 
-	// Get top countries
 	const topCountries = await ToolView.aggregate([
 		{
 			$match: {
 				tool: tool._id,
-				createdAt: { $gte: startDate },
+				createdAt: { $gte: startDate, $lte: endDate },
 			},
 		},
 		{
@@ -200,19 +308,97 @@ const getToolAnalytics = asyncHandler(async (req, res) => {
 		{ $limit: 10 },
 	]);
 
+	const avgDurationResult = await ToolView.aggregate([
+		{
+			$match: {
+				tool: tool._id,
+				createdAt: { $gte: startDate, $lte: endDate },
+			},
+		},
+		{
+			$group: {
+				_id: null,
+				avgDuration: { $avg: '$viewDuration' },
+				totalSessions: { $sum: 1 },
+				shortSessions: {
+					$sum: {
+						$cond: [{ $lt: ['$viewDuration', 10] }, 1, 0],
+					},
+				},
+			},
+		},
+	]);
+
+	const averageTimeOnPage =
+		avgDurationResult.length > 0 ? avgDurationResult[0].avgDuration : 0;
+	const bounceRate =
+		avgDurationResult.length > 0
+			? (avgDurationResult[0].shortSessions /
+					avgDurationResult[0].totalSessions) *
+			  100
+			: 0;
+
+	const returnVisitorsCount = await ToolView.aggregate([
+		{
+			$match: {
+				tool: tool._id,
+				createdAt: { $gte: startDate, $lte: endDate },
+			},
+		},
+		{
+			$group: {
+				_id: '$sessionId',
+				visitCount: { $sum: 1 },
+			},
+		},
+		{
+			$match: {
+				visitCount: { $gt: 1 },
+			},
+		},
+		{
+			$count: 'returnVisitors',
+		},
+	]);
+
+	const returnVisitors =
+		currentUniqueVisitors > 0
+			? ((returnVisitorsCount[0]?.returnVisitors || 0) /
+					currentUniqueVisitors) *
+			  100
+			: 0;
+
 	res.json({
 		period,
-		totalViews: tool.analytics.totalViews,
-		uniqueViews: tool.analytics.uniqueViews,
+		totalViews: currentViews,
+		uniqueViews: currentUniqueVisitors,
+		uniqueVisitors: currentUniqueVisitors,
 		weeklyViews: tool.analytics.weeklyViews,
 		monthlyViews: tool.analytics.monthlyViews,
-		dailyBreakdown: analytics,
+
+		viewsChange,
+		visitorsChange,
+		ctrChange,
+		clicksChange,
+
+		externalClicks: currentClicks,
+		clickThroughRate,
+
+		averageTimeOnPage,
+		bounceRate,
+		returnVisitors,
+
+		dailyData: dailyAnalytics,
+		dailyBreakdown: dailyAnalytics,
+		trafficSources,
 		topCountries,
+
 		lastUpdated: tool.analytics.lastViewedAt,
 	});
 });
 
 module.exports = {
 	trackView,
+	trackClick,
 	getToolAnalytics,
 };

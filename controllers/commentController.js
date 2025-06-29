@@ -11,9 +11,10 @@ const { getRedisClient } = require('../config/db');
 const getComments = asyncHandler(async (req, res) => {
 	const { toolId } = req.params;
 	const { page = 1, limit = 20, sort = 'newest' } = req.query;
-
 	const redisClient = getRedisClient();
-	const cacheKey = `comments:${toolId}:${page}:${limit}:${sort}`;
+	const cacheKey = `comments:${toolId}:${page}:${limit}:${sort}:${
+		req.user?._id || 'anonymous'
+	}`;
 
 	// Check cache first
 	const cachedComments = await redisClient.get(cacheKey);
@@ -46,7 +47,7 @@ const getComments = asyncHandler(async (req, res) => {
 		.skip(skip)
 		.limit(parseInt(limit));
 
-	// Get replies for each comment
+	// Get replies for each comment and user votes
 	const commentsWithReplies = await Promise.all(
 		comments.map(async (comment) => {
 			const replies = await Comment.find({
@@ -55,11 +56,44 @@ const getComments = asyncHandler(async (req, res) => {
 			})
 				.populate('user', 'companyName companyLogoUrl')
 				.sort({ createdAt: 1 })
-				.limit(5); // Limit initial replies, load more on demand
+				.limit(5);
+
+			// Get user's vote for this comment if logged in
+			let userVote = null;
+			if (req.user) {
+				const vote = await CommentVote.findOne({
+					comment: comment._id,
+					user: req.user._id,
+				});
+				if (vote) {
+					userVote = vote.voteType;
+				}
+			}
+
+			// Get user votes for replies if logged in
+			const repliesWithVotes = await Promise.all(
+				replies.map(async (reply) => {
+					let replyUserVote = null;
+					if (req.user) {
+						const replyVote = await CommentVote.findOne({
+							comment: reply._id,
+							user: req.user._id,
+						});
+						if (replyVote) {
+							replyUserVote = replyVote.voteType;
+						}
+					}
+					return {
+						...reply.toObject(),
+						userVote: replyUserVote,
+					};
+				})
+			);
 
 			return {
 				...comment.toObject(),
-				replies,
+				userVote,
+				replies: repliesWithVotes,
 				hasMoreReplies: comment.replyCount > 5,
 			};
 		})
@@ -81,8 +115,8 @@ const getComments = asyncHandler(async (req, res) => {
 		},
 	};
 
-	// Cache for 5 minutes
-	await redisClient.set(cacheKey, JSON.stringify(result), { EX: 300 });
+	// Cache for 2 minutes (shorter cache for user-specific data)
+	await redisClient.set(cacheKey, JSON.stringify(result), { EX: 120 });
 
 	res.json(result);
 });
@@ -282,7 +316,7 @@ const deleteComment = asyncHandler(async (req, res) => {
 // @access Private
 const voteComment = asyncHandler(async (req, res) => {
 	const { commentId } = req.params;
-	const { voteType } = req.body; // 'upvote' or 'downvote'
+	const { voteType } = req.body;
 
 	if (!['upvote', 'downvote'].includes(voteType)) {
 		res.status(400);
@@ -301,19 +335,21 @@ const voteComment = asyncHandler(async (req, res) => {
 		user: req.user._id,
 	});
 
+	let action = '';
+	let previousVote = null;
+
 	if (existingVote) {
+		previousVote = existingVote.voteType;
 		if (existingVote.voteType === voteType) {
 			// Remove vote
 			await existingVote.deleteOne();
-
 			// Update comment vote count
 			const updateField =
 				voteType === 'upvote' ? 'votes.upvotes' : 'votes.downvotes';
 			await Comment.findByIdAndUpdate(commentId, {
 				$inc: { [updateField]: -1 },
 			});
-
-			res.json({ message: 'Vote removed', action: 'removed' });
+			action = 'removed';
 		} else {
 			// Change vote
 			const oldVoteField =
@@ -333,8 +369,7 @@ const voteComment = asyncHandler(async (req, res) => {
 					[newVoteField]: 1,
 				},
 			});
-
-			res.json({ message: 'Vote updated', action: 'changed' });
+			action = 'added';
 		}
 	} else {
 		// Create new vote
@@ -350,8 +385,7 @@ const voteComment = asyncHandler(async (req, res) => {
 		await Comment.findByIdAndUpdate(commentId, {
 			$inc: { [updateField]: 1 },
 		});
-
-		res.json({ message: 'Vote added', action: 'added' });
+		action = 'added';
 	}
 
 	// Clear cache
@@ -361,6 +395,12 @@ const voteComment = asyncHandler(async (req, res) => {
 	if (keys.length > 0) {
 		await redisClient.del(keys);
 	}
+
+	res.json({
+		message: `Vote ${action}`,
+		action,
+		...(previousVote && { previousVote }),
+	});
 });
 
 // @desc Report a comment

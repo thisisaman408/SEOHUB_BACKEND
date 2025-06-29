@@ -1,0 +1,511 @@
+{
+  "name": "The best AI productivity tools in 2025",
+  "slug": "the-best-ai-productivity-tools-in-2025",
+  "tagline": "These are the best AI productivity tools to help you use artificial intelligence in your daily work.",
+  "description": "These are the best AI productivity tools to help you use artificial intelligence in your daily work.",
+  "websiteUrl": "https://zapier.com/blog/best-ai-productivity-tools/",
+  "tags": [
+    "artificial intelligence",
+    "machine learning",
+    "ai"
+  ],
+  "appStoreUrl": null,
+  "playStoreUrl": null,
+  "status": "pending",
+  "isFeatured": false,
+  "submittedBy": null,
+  "logoUrl": "https://res.cloudinary.com/zapier-media/image/upload/v1743546142/mcp_retev0.svg",
+  "visual": {
+    "type": "default",
+    "color": "#3B82F6",
+    "content": [
+      {
+        "icon": "brain",
+        "text": "AI Powered"
+      }
+    ]
+  },
+  "source": "scraped",
+  "totalRatingSum": 0,
+  "numberOfRatings": 0,
+  "averageRating": 0,
+  "analytics": {
+    "totalViews": 0,
+    "uniqueViews": 0,
+    "weeklyViews": 0,
+    "monthlyViews": 0,
+    "lastViewedAt": null
+  },
+  "commentStats": {
+    "totalComments": 0,
+    "approvedComments": 0,
+    "lastCommentAt": null
+  },
+  "mediaStats": {
+    "totalMedia": 0,
+    "screenshots": 0,
+    "videos": 0
+  }
+}
+================================================================================
+{
+  "name": "The 55 Best AI Tools for 2025 (Tried and Tested)",
+  "slug": "the-55-best-ai-tools-for-2025-tried-and-tested",
+  "tagline": "Explore 55 top AI tools across 25 categories, with insights on use cases, features, and pricing.",
+  "description": "Explore 55 top AI tools across 25 categories, with insights on use cases, features, and pricing.",
+  "websiteUrl": "https://www.synthesia.io/post/ai-tools",
+  "tags": [
+    "insights",
+    "machine learning",
+    "hiring",
+    "new",
+    "synthesia news",
+    "ai",
+    "artificial intelligence",
+    "how to guides"
+  ],
+  "appStoreUrl": null,
+  "playStoreUrl": null,
+  "status": "pending",
+  "isFeatured": false,
+  "submittedBy": null,
+  "logoUrl": "https://cdn.prod.website-files.com/65e89895c5a4b8d764c0d710/65eae689ace95f5017dc17a0_Logo-main.svg",
+  "visual": {
+    "type": "default",
+    "color": "#3B82F6",
+    "content": [
+      {
+        "icon": "brain",
+        "text": "AI Powered"
+      }
+    ]
+  },
+  "source": "scraped",
+  "totalRatingSum": 0,
+  "numberOfRatings": 0,
+  "averageRating": 0,
+  "analytics": {
+    "totalViews": 0,
+    "uniqueViews": 0,
+    "weeklyViews": 0,
+    "monthlyViews": 0,
+    "lastViewedAt": null
+  },
+  "commentStats": {
+    "totalComments": 0,
+    "approvedComments": 0,
+    "lastCommentAt": null
+  },
+  "mediaStats": {
+    "totalMedia": 0,
+    "screenshots": 0,
+    "videos": 0
+  }
+}
+================================================================================
+{
+  "name": "Lists and rankings of the best AI Tools",
+  "slug": "lists-and-rankings-of-the-best-ai-tools",
+  "tagline": "The ultimate full AI list of all the tools available in the world in a ranking. List updated daily and Top 10 by category available.",
+  "description": "The ultimate full AI list of all the tools available in the world in a ranking. List updated daily and Top 10 by category available.",
+  "websiteUrl": "https://www.aixploria.com/en/ultimate-list-ai/",
+  "tags": [
+    "artificial intelligence",
+    "machine learning",
+    "ai"
+  ],
+  "appStoreUrl": null,
+  "playStoreUrl": null,
+  "status": "pending",
+  "isFeatured": false,
+  "submittedBy": null,
+  "logoUrl": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",
+  "visual": {
+    "type": "default",
+    "color": "#3B82F6",
+    "content": [
+      {
+        "icon": "brain",
+        "text": "AI Powered"
+      }
+    ]
+  },
+  "source": "scraped",
+  "totalRatingSum": 0,
+  "numberOfRatings": 0,
+  "averageRating": 0,
+  "analytics": {
+    "totalViews": 0,
+    "uniqueViews": 0,
+    "weeklyViews": 0,
+    "monthlyViews": 0,
+    "lastViewedAt": null
+  },
+  "commentStats": {
+    "totalComments": 0,
+    "approvedComments": 0,
+    "lastCommentAt": null
+  },
+  "mediaStats": {
+    "totalMedia": 0,
+    "screenshots": 0,
+    "videos": 0
+  }
+}
+================================================================================
+{
+  "name": "I tried 70+ best AI tools in 2025",
+  "slug": "i-tried-70-best-ai-tools-in-2025",
+  "tagline": "The tools, the guides, the insights. If it’s AI, it’s here",
+  "description": "The tools, the guides, the insights. If it’s AI, it’s here",
+  "websiteUrl": "https://www.techradar.com/best/best-ai-tools",
+  "tags": [
+    "artificial intelligence",
+    "machine learning",
+    "ai"
+  ],
+  "appStoreUrl": null,
+  "playStoreUrl": null,
+  "status": "pending",
+  "isFeatured": false,
+  "submittedBy": null,
+  "logoUrl": "https://cdn.mos.cms.futurecdn.net/hU6SuJbeLq3eeKWpXjHVbZ.png",
+  "visual": {
+    "type": "default",
+    "color": "#3B82F6",
+    "content": [
+      {
+        "icon": "brain",
+        "text": "AI Powered"
+      }
+    ]
+  },
+  "source": "scraped",
+  "totalRatingSum": 0,
+  "numberOfRatings": 0,
+  "averageRating": 0,
+  "analytics": {
+    "totalViews": 0,
+    "uniqueViews": 0,
+    "weeklyViews": 0,
+    "monthlyViews": 0,
+    "lastViewedAt": null
+  },
+  "commentStats": {
+    "totalComments": 0,
+    "approvedComments": 0,
+    "lastCommentAt": null
+  },
+  "mediaStats": {
+    "totalMedia": 0,
+    "screenshots": 0,
+    "videos": 0
+  }
+}
+================================================================================
+{
+  "name": "Generative AI in Search: Let Google do the searching for you",
+  "slug": "generative-ai-in-search-let-google-do-the-searching-for-you",
+  "tagline": "We’re bringing AI Overviews to everyone in the U.S. and adding new gen AI experiences to take more of the legwork out of searching.",
+  "description": "We’re bringing AI Overviews to everyone in the U.S. and adding new gen AI experiences to take more of the legwork out of searching.",
+  "websiteUrl": "https://blog.google/products/search/generative-ai-google-search-may-2024/",
+  "tags": [
+    "artificial intelligence",
+    "none",
+    "machine learning",
+    "ai"
+  ],
+  "appStoreUrl": null,
+  "playStoreUrl": null,
+  "status": "pending",
+  "isFeatured": false,
+  "submittedBy": null,
+  "logoUrl": "",
+  "visual": {
+    "type": "default",
+    "color": "#3B82F6",
+    "content": [
+      {
+        "icon": "brain",
+        "text": "AI Powered"
+      }
+    ]
+  },
+  "source": "scraped",
+  "totalRatingSum": 0,
+  "numberOfRatings": 0,
+  "averageRating": 0,
+  "analytics": {
+    "totalViews": 0,
+    "uniqueViews": 0,
+    "weeklyViews": 0,
+    "monthlyViews": 0,
+    "lastViewedAt": null
+  },
+  "commentStats": {
+    "totalComments": 0,
+    "approvedComments": 0,
+    "lastCommentAt": null
+  },
+  "mediaStats": {
+    "totalMedia": 0,
+    "screenshots": 0,
+    "videos": 0
+  }
+}
+================================================================================
+{
+  "name": "60 Most Popular AI Tools Ranked (February 2025)",
+  "slug": "60-most-popular-ai-tools-ranked-february-2025",
+  "tagline": "Blog > 60 Most Popular AI Tools Ranked (February 2025)",
+  "description": "60 Most Popular AI Tools Ranked (February 2025) · 1. Perplexity AI · 2. Claude · 3. Google Gemini · 4. Microsoft Copilot · 5. DeepL · 6. Canva · 7. Poe · 8. DeepAI.",
+  "websiteUrl": "https://explodingtopics.com/blog/most-popular-ai-tools",
+  "tags": [
+    "artificial intelligence",
+    "machine learning",
+    "ai"
+  ],
+  "appStoreUrl": null,
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.bard&hl=en_US",
+  "status": "pending",
+  "isFeatured": false,
+  "submittedBy": null,
+  "logoUrl": "https://explodingtopics.com/static/images/semrush-logo.svg",
+  "visual": {
+    "type": "default",
+    "color": "#3B82F6",
+    "content": [
+      {
+        "icon": "brain",
+        "text": "AI Powered"
+      }
+    ]
+  },
+  "source": "scraped",
+  "totalRatingSum": 0,
+  "numberOfRatings": 0,
+  "averageRating": 0,
+  "analytics": {
+    "totalViews": 0,
+    "uniqueViews": 0,
+    "weeklyViews": 0,
+    "monthlyViews": 0,
+    "lastViewedAt": null
+  },
+  "commentStats": {
+    "totalComments": 0,
+    "approvedComments": 0,
+    "lastCommentAt": null
+  },
+  "mediaStats": {
+    "totalMedia": 0,
+    "screenshots": 0,
+    "videos": 0
+  }
+}
+================================================================================
+{
+  "name": "The Ultimate Guide to Top AI Tools in 2024: Work Smarter, Not Harder",
+  "slug": "the-ultimate-guide-to-top-ai-tools-in-2024-work-smarter-not-harder",
+  "tagline": "In the rapidly evolving world of technology, Artificial Intelligence (AI) tools have become indispensable assets for enhancing productivity, creativity, and decision-making across various industries…",
+  "description": "In the rapidly evolving world of technology, Artificial Intelligence (AI) tools have become indispensable assets for enhancing productivity, creativity, and decision-making across various industries…",
+  "websiteUrl": "https://medium.com/@genai.works/the-ultimate-guide-to-top-ai-tools-in-2024-work-smarter-not-harder-399c040a368a",
+  "tags": [
+    "artificial intelligence",
+    "machine learning",
+    "ai"
+  ],
+  "appStoreUrl": null,
+  "playStoreUrl": null,
+  "status": "pending",
+  "isFeatured": false,
+  "submittedBy": null,
+  "logoUrl": "",
+  "visual": {
+    "type": "default",
+    "color": "#3B82F6",
+    "content": [
+      {
+        "icon": "brain",
+        "text": "AI Powered"
+      }
+    ]
+  },
+  "source": "scraped",
+  "totalRatingSum": 0,
+  "numberOfRatings": 0,
+  "averageRating": 0,
+  "analytics": {
+    "totalViews": 0,
+    "uniqueViews": 0,
+    "weeklyViews": 0,
+    "monthlyViews": 0,
+    "lastViewedAt": null
+  },
+  "commentStats": {
+    "totalComments": 0,
+    "approvedComments": 0,
+    "lastCommentAt": null
+  },
+  "mediaStats": {
+    "totalMedia": 0,
+    "screenshots": 0,
+    "videos": 0
+  }
+}
+================================================================================
+{
+  "name": "The 24 best generative AI tools in 2025",
+  "slug": "the-24-best-generative-ai-tools-in-2025",
+  "tagline": "Content creation · Scribe · ChatGPT · Copy.ai · Jasper · Claude · Cohere · Gemini · Bard.",
+  "description": "Content creation · Scribe · ChatGPT · Copy.ai · Jasper · Claude · Cohere · Gemini · Bard.",
+  "websiteUrl": "https://www.turing.com/resources/generative-ai-tools",
+  "tags": [
+    "artificial intelligence",
+    "machine learning",
+    "ai"
+  ],
+  "appStoreUrl": null,
+  "playStoreUrl": null,
+  "status": "pending",
+  "isFeatured": false,
+  "submittedBy": null,
+  "logoUrl": "",
+  "visual": {
+    "type": "default",
+    "color": "#3B82F6",
+    "content": [
+      {
+        "icon": "brain",
+        "text": "AI Powered"
+      }
+    ]
+  },
+  "source": "scraped",
+  "totalRatingSum": 0,
+  "numberOfRatings": 0,
+  "averageRating": 0,
+  "analytics": {
+    "totalViews": 0,
+    "uniqueViews": 0,
+    "weeklyViews": 0,
+    "monthlyViews": 0,
+    "lastViewedAt": null
+  },
+  "commentStats": {
+    "totalComments": 0,
+    "approvedComments": 0,
+    "lastCommentAt": null
+  },
+  "mediaStats": {
+    "totalMedia": 0,
+    "screenshots": 0,
+    "videos": 0
+  }
+}
+================================================================================
+{
+  "name": "The 55 Best AI Tools for 2025 (Tried and Tested)",
+  "slug": "the-55-best-ai-tools-for-2025-tried-and-tested",
+  "tagline": "Explore 55 top AI tools across 25 categories, with insights on use cases, features, and pricing.",
+  "description": "Explore 55 top AI tools across 25 categories, with insights on use cases, features, and pricing.",
+  "websiteUrl": "https://www.synthesia.io/post/ai-tools",
+  "tags": [
+    "insights",
+    "machine learning",
+    "hiring",
+    "new",
+    "synthesia news",
+    "ai",
+    "artificial intelligence",
+    "how to guides"
+  ],
+  "appStoreUrl": null,
+  "playStoreUrl": null,
+  "status": "pending",
+  "isFeatured": false,
+  "submittedBy": null,
+  "logoUrl": "https://cdn.prod.website-files.com/65e89895c5a4b8d764c0d710/65eae689ace95f5017dc17a0_Logo-main.svg",
+  "visual": {
+    "type": "default",
+    "color": "#3B82F6",
+    "content": [
+      {
+        "icon": "brain",
+        "text": "AI Powered"
+      }
+    ]
+  },
+  "source": "scraped",
+  "totalRatingSum": 0,
+  "numberOfRatings": 0,
+  "averageRating": 0,
+  "analytics": {
+    "totalViews": 0,
+    "uniqueViews": 0,
+    "weeklyViews": 0,
+    "monthlyViews": 0,
+    "lastViewedAt": null
+  },
+  "commentStats": {
+    "totalComments": 0,
+    "approvedComments": 0,
+    "lastCommentAt": null
+  },
+  "mediaStats": {
+    "totalMedia": 0,
+    "screenshots": 0,
+    "videos": 0
+  }
+}
+================================================================================
+{
+  "name": "Free AI tools from Google Cloud",
+  "slug": "free-ai-tools-from-google-cloud",
+  "tagline": "Get started with AI with these free AI tools and APIs",
+  "description": "Get started with AI with these free AI tools and APIs",
+  "websiteUrl": "https://cloud.google.com/use-cases/free-ai-tools",
+  "tags": [
+    "artificial intelligence",
+    "machine learning",
+    "ai"
+  ],
+  "appStoreUrl": null,
+  "playStoreUrl": null,
+  "status": "pending",
+  "isFeatured": false,
+  "submittedBy": null,
+  "logoUrl": "https://www.gstatic.com/cgc/google-cloud-logo.svg",
+  "visual": {
+    "type": "default",
+    "color": "#3B82F6",
+    "content": [
+      {
+        "icon": "brain",
+        "text": "AI Powered"
+      }
+    ]
+  },
+  "source": "scraped",
+  "totalRatingSum": 0,
+  "numberOfRatings": 0,
+  "averageRating": 0,
+  "analytics": {
+    "totalViews": 0,
+    "uniqueViews": 0,
+    "weeklyViews": 0,
+    "monthlyViews": 0,
+    "lastViewedAt": null
+  },
+  "commentStats": {
+    "totalComments": 0,
+    "approvedComments": 0,
+    "lastCommentAt": null
+  },
+  "mediaStats": {
+    "totalMedia": 0,
+    "screenshots": 0,
+    "videos": 0
+  }
+}
+================================================================================

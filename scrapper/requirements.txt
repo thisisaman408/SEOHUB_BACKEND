@@ -1,9 +1,7 @@
-google-generativeai
-pymongo
-bcrypt
-beautifulsoup4
-python-dotenv
-requests
-selenium
-webdriver_manager
-pyperclip
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+google-search-results>=2.4.2
+lxml>=4.9.0
+html5lib>=1.1
+urllib3>=2.0.0
+certifi>=2023.7.22
