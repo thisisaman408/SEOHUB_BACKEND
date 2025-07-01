@@ -8,9 +8,13 @@ const { getRedisClient } = require('../config/db');
 // @desc Get comments for a tool
 // @route GET /api/tools/:toolId/comments
 // @access Public
+// @desc Get comments for a tool
+// @route GET /api/tools/:toolId/comments
+// @access Public
 const getComments = asyncHandler(async (req, res) => {
 	const { toolId } = req.params;
 	const { page = 1, limit = 20, sort = 'newest' } = req.query;
+
 	const redisClient = getRedisClient();
 	const cacheKey = `comments:${toolId}:${page}:${limit}:${sort}:${
 		req.user?._id || 'anonymous'
@@ -36,24 +40,38 @@ const getComments = asyncHandler(async (req, res) => {
 
 	const skip = (page - 1) * limit;
 
-	// Get top-level comments (no parent)
-	const comments = await Comment.find({
+	// ✅ UPDATED QUERY TO EXCLUDE REPORTED COMMENTS FOR PUBLIC
+	const commentQuery = {
 		tool: toolId,
 		parentComment: null,
-		status: 'approved',
-	})
+		status: { $in: ['approved'] }, // Only show approved comments
+	};
+
+	// ✅ IF USER IS ADMIN, SHOW ALL COMMENTS INCLUDING REPORTED ONES
+	if (req.user && req.user.role === 'admin') {
+		commentQuery.status = { $in: ['approved', 'reported'] };
+	}
+
+	// Get top-level comments (no parent)
+	const comments = await Comment.find(commentQuery)
 		.populate('user', 'companyName companyLogoUrl')
 		.sort(sortQuery)
 		.skip(skip)
 		.limit(parseInt(limit));
 
-	// Get replies for each comment and user votes
+	// Get replies for each comment (also filter out reported replies for non-admins)
 	const commentsWithReplies = await Promise.all(
 		comments.map(async (comment) => {
-			const replies = await Comment.find({
+			const replyQuery = {
 				parentComment: comment._id,
-				status: 'approved',
-			})
+				status: { $in: ['approved'] },
+			};
+
+			if (req.user && req.user.role === 'admin') {
+				replyQuery.status = { $in: ['approved', 'reported'] };
+			}
+
+			const replies = await Comment.find(replyQuery)
 				.populate('user', 'companyName companyLogoUrl')
 				.sort({ createdAt: 1 })
 				.limit(5);
@@ -83,9 +101,13 @@ const getComments = asyncHandler(async (req, res) => {
 							replyUserVote = replyVote.voteType;
 						}
 					}
+
 					return {
 						...reply.toObject(),
 						userVote: replyUserVote,
+						// ✅ ADD REPORTED STATUS FOR ADMIN
+						isReported: reply.reports && reply.reports.length > 0,
+						reportCount: reply.reports ? reply.reports.length : 0,
 					};
 				})
 			);
@@ -95,6 +117,9 @@ const getComments = asyncHandler(async (req, res) => {
 				userVote,
 				replies: repliesWithVotes,
 				hasMoreReplies: comment.replyCount > 5,
+				// ✅ ADD REPORTED STATUS FOR ADMIN
+				isReported: comment.reports && comment.reports.length > 0,
+				reportCount: comment.reports ? comment.reports.length : 0,
 			};
 		})
 	);
@@ -102,7 +127,10 @@ const getComments = asyncHandler(async (req, res) => {
 	const totalComments = await Comment.countDocuments({
 		tool: toolId,
 		parentComment: null,
-		status: 'approved',
+		status:
+			req.user && req.user.role === 'admin'
+				? { $in: ['approved', 'reported'] }
+				: { $in: ['approved'] },
 	});
 
 	const result = {
@@ -160,6 +188,7 @@ const createComment = asyncHandler(async (req, res) => {
 		user: req.user._id,
 		content: content.trim(),
 		parentComment,
+		status: 'approved',
 	});
 
 	// Update reply count for parent comment
@@ -404,6 +433,7 @@ const voteComment = asyncHandler(async (req, res) => {
 });
 
 // @desc Report a comment
+// @desc Report a comment
 // @route POST /api/tools/:toolId/comments/:commentId/report
 // @access Private
 const reportComment = asyncHandler(async (req, res) => {
@@ -417,6 +447,7 @@ const reportComment = asyncHandler(async (req, res) => {
 		'misinformation',
 		'other',
 	];
+
 	if (!validReasons.includes(reason)) {
 		res.status(400);
 		throw new Error('Invalid report reason');
@@ -437,8 +468,6 @@ const reportComment = asyncHandler(async (req, res) => {
 		res.status(400);
 		throw new Error('You have already reported this comment');
 	}
-
-	// Add report
 	comment.reports.push({
 		reportedBy: req.user._id,
 		reason,
@@ -446,14 +475,33 @@ const reportComment = asyncHandler(async (req, res) => {
 		reportedAt: new Date(),
 	});
 
-	// Auto-moderate if too many reports
-	if (comment.reports.length >= 5) {
+	if (comment.status === 'approved') {
 		comment.status = 'reported';
+		await Tool.findByIdAndUpdate(comment.tool, {
+			$inc: {
+				'commentStats.approvedComments': -1,
+			},
+		});
+	}
+	await comment.save();
+	if (comment.status === 'reported') {
+		await Tool.findByIdAndUpdate(comment.tool, {
+			$inc: {
+				'commentStats.approvedComments': -1,
+			},
+		});
+	}
+	const redisClient = getRedisClient();
+	const pattern = `comments:${comment.tool}:*`;
+	const keys = await redisClient.keys(pattern);
+	if (keys.length > 0) {
+		await redisClient.del(keys);
 	}
 
-	await comment.save();
-
-	res.json({ message: 'Comment reported successfully' });
+	res.json({
+		message: 'Comment reported successfully',
+		status: comment.status,
+	});
 });
 
 module.exports = {

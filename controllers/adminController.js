@@ -138,21 +138,40 @@ const getReportedComments = asyncHandler(async (req, res) => {
 // @access Private/Admin
 const moderateComment = asyncHandler(async (req, res) => {
 	const { status } = req.body; // 'approved', 'rejected'
-
+	if (!['approved', 'rejected'].includes(status)) {
+		res.status(400);
+		throw new Error('Invalid status. Must be "approved" or "rejected"');
+	}
 	const comment = await Comment.findById(req.params.commentId);
 	if (!comment) {
 		res.status(404);
 		throw new Error('Comment not found');
 	}
 
+	const oldStatus = comment.status;
 	comment.status = status;
 
 	if (status === 'approved') {
+		// Clear reports when approved
 		comment.reports = [];
 	}
 
 	await comment.save();
 
+	// ✅ UPDATE TOOL COMMENT STATS BASED ON STATUS CHANGE
+	const tool = await Tool.findById(comment.tool);
+	if (tool) {
+		if (oldStatus === 'reported' && status === 'approved') {
+			// Comment was reported but now approved - increment approved count
+			tool.commentStats.approvedComments += 1;
+		} else if (oldStatus === 'approved' && status === 'rejected') {
+			// Comment was approved but now rejected - decrement approved count
+			tool.commentStats.approvedComments -= 1;
+		}
+		await tool.save();
+	}
+
+	// Clear cache
 	const redisClient = getRedisClient();
 	const pattern = `comments:${comment.tool}:*`;
 	const keys = await redisClient.keys(pattern);
@@ -162,6 +181,7 @@ const moderateComment = asyncHandler(async (req, res) => {
 
 	res.json(comment);
 });
+
 const getCommentById = asyncHandler(async (req, res) => {
 	const comment = await Comment.findById(req.params.commentId)
 		.populate('user', 'companyName email companyLogoUrl')
