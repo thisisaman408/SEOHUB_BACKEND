@@ -48,6 +48,11 @@ app.use('/api/tools', toolRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/users', userRoutes);
 
+app.use((req, res, next) => {
+	res.setHeader('Cross-Origin-Opener-Policy', 'same-origin-allow-popups');
+	next();
+});
+
 app.use(notFound);
 app.use(errorHandler);
 
